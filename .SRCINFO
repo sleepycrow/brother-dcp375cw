@@ -1,22 +1,22 @@
-pkgbase = brother-dcp195c
-	pkgdesc = LPR and CUPS driver for the Brother DCP195C
+pkgbase = brother-dcp375cw
+	pkgdesc = LPR and CUPS driver for the Brother DCP375C
 	pkgver = 1.1.3
 	pkgrel = 2
 	url = http://solutions.brother.com/linux/en_us/
-	install = brother-dcp195c.install
+	install = brother-dcp375cw.install
 	arch = i686
 	arch = x86_64
 	license = custom:brother commercial license
 	depends = cups
 	depends = lib32-glibc
-	source = http://www.brother.com/pub/bsc/linux/dlf/dcp195clpr-1.1.3-1.i386.rpm
-	source = http://www.brother.com/pub/bsc/linux/dlf/dcp195ccupswrapper-1.1.3-1.i386.rpm
+	source = http://www.brother.com/pub/bsc/linux/dlf/dcp375cwlpr-1.1.3-1.i386.rpm
+	source = http://www.brother.com/pub/bsc/linux/dlf/dcp375cwcupswrapper-1.1.3-1.i386.rpm
 	source = cupswrapper-license.txt
 	source = lpr-license.txt
-	sha256sums = e86d73d8308e2b963c0acf3ba9be82e133b52766a41e95983a08ba55ba0879b4
-	sha256sums = 806ce6646a408daca8e9f0024f7d6af59ca8186db540ed41483501495941f3ba
+	sha256sums = 52075fee6ce462c27ef5fd8d3639652cc83d835d11eb5c3ac2e0bb0cbd45bc36
+	sha256sums = 542d1620ae598d8d547e410a2a3516ec11bb9677d341816a0e19ff3973400188
 	sha256sums = 2c6aa6a641332e5c87e971ac2a8beae13b059747bdba331bbd515914770d72d9
 	sha256sums = 9d85a8aafdaac8fac80e04234ad2acf5642bbf0b91ee582d2a89519a55f6dd67
 
-pkgname = brother-dcp195c
+pkgname = brother-dcp375cw
 
