@@ -1,25 +1,29 @@
-# Maintainer: David Schury <dasc at posteo de>
-# Contributor: Libernux <dutchman55@gmx.com>
-pkgname="brother-dcp195c"
+# Maintainer: sleepycrow <sleepycrow[a]posteo.net>
+# This PKGBUILD is just a slightly changed up version of the one made for the
+# Brother DCP-195C (https://aur.archlinux.org/packages/brother-dcp195c/) <3
+# Full props for the file go to the original creators.
+
+
+pkgname="brother-dcp375cw"
 pkgver="1.1.3"
-pkgrel=2
-_pkgrel=1
-pkgdesc="LPR and CUPS driver for the Brother DCP195C"
+pkgrel=1
+pkgdesc="LPR and CUPS driver for the Brother DCP375CW"
 arch=('i686' 'x86_64')
 url="http://solutions.brother.com/linux/en_us/"
 license=('custom:brother commercial license')
 depends=('cups')
 install="$pkgname.install"
 source=(
-	"http://www.brother.com/pub/bsc/linux/dlf/dcp195clpr-$pkgver-$_pkgrel.i386.rpm"
-	"http://www.brother.com/pub/bsc/linux/dlf/dcp195ccupswrapper-$pkgver-$_pkgrel.i386.rpm"
-	'cupswrapper-license.txt'
-	'lpr-license.txt'
+        "http://www.brother.com/pub/bsc/linux/dlf/dcp375cwlpr-$pkgver-$pkgrel.i386.rpm"
+        "http://www.brother.com/pub/bsc/linux/dlf/dcp375cwcupswrapper-$pkgver-$pkgrel.i386.rpm"
+        'cupswrapper-license.txt'
+        'lpr-license.txt'
 )
-sha256sums=('e86d73d8308e2b963c0acf3ba9be82e133b52766a41e95983a08ba55ba0879b4'
-            '806ce6646a408daca8e9f0024f7d6af59ca8186db540ed41483501495941f3ba'
-            '2c6aa6a641332e5c87e971ac2a8beae13b059747bdba331bbd515914770d72d9'
-            '9d85a8aafdaac8fac80e04234ad2acf5642bbf0b91ee582d2a89519a55f6dd67')
+md5sums=('60cdd83336cea4e35dc2e425ce164c2a'
+         '38761700b844373e833fdc0705a5e89c'
+         '97ad0cffd216059e9d1d3121899d8646'
+         '5e87a3dc0f3e3438c088eda0f3565f0d')
+
 
 if test "$CARCH" == x86_64; then
   depends+=('lib32-glibc')
